@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Inspiration&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&family=Viga&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro';
+}
+
+
+/* == navbar == */
+
+/* Color of the links BEFORE scroll */
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon,
+.navbar-scroll .navbar-brand {
+  color: #fff;
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon,
+.navbar-scrolled .navbar-brand {
+  color: #fff;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scroll,
+.navbar-scrolled {
+  background-color: #cbbcb1;
+}
+
+.mask-custom {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, .15) !important;
+}
+
+.navbar-brand {
+  font-size: 1.75rem;
+  letter-spacing: 3px;
+}
+
+/* == navbar == */
+
+/* === jumbotron == */
+
+.jumbotron {
+    margin-top: 80px;
+}
+
+.jumbotron h1{
+    font-size: 48px;
+}
+
+.jumbotron a{
+    width: max-content;
+}
+
+.jumbotron button{
+  width: 100px;
+}
+
+.jumbotron .glass-button {
+    display: inline-block;
+    padding: 10px;
+    border: 0;
+    text-decoration: none;
+    border-radius: 8px;
+    background-color: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(30px);
+    color: rgba(255,255,255,0.8);
+    font-size: 14px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+ 
+.jumbotron .glass-button:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
+
+.jumbotron .jumbotron-right .image-wrapper {
+    width: 500px;
+    height: 85vh;
+    overflow: hidden;
+    background-image: url('http://127.0.0.1:8000/images/landing-page-image.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+}
+
+/* == jumbotron == */
+
+/* == our-mission == */
+
+.our-mission{
+  margin-top: 150px;
+}
+
+.our-mission .our-mission-left .image-wrapper{
+  width: 100%;
+  height: 400px;
+  background-image: url('http://127.0.0.1:8000/images/happy-developer.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+}
+
+/* == our-mission == */
+
+/* == what-we-do == */
+.what-we-do{
+  margin-top: 150px;
+}
+
+.what-we-do p{
+  margin: 0;
+}
+
+
+.what-we-do .what-we-do-card{
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  
+}
+/* == what-we-do == */
+
+
+/* == responsive breakpoint == */
+
+@media (max-width: 992px) {
+  /* == jumbotron == */
+  .jumbotron h1{
+    font-size: 24px;
+  }
+  
+  .jumbotron h4{
+    font-size: 18px;
+  }
+
+  .jumbotron .jumbotron-left{
+    text-align: center;
+  }
+
+  .jumbotron .jumbotron-right .image-wrapper {
+    width: 100%;
+    display: none;
+  } 
+
+  .jumbotron .jumbotron-right{
+    margin-top: 20px;
+  }
+
+  .jumbotron button{
+    width: 100%;
+  }
+  /* == jumbotron == */
+
+  /* == our-mission == */
+  .our-mission{
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .our-mission .our-mission-left .image-wrapper{
+    height: 30vh;
+  }
+
+  .our-mission .our-mission-right{
+    margin-top: 20px;
+  }
+
+  .our-mission .our-mission-right h1{
+    font-size: 24px;
+  }
+
+  .our-mission .our-mission-right h5{
+    font-size: 16px;
+    text-align: justify;
+  }
+  /* == our-mission == */
+}
+
+/* == responsive breakpoint == */
